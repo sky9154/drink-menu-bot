@@ -5,12 +5,12 @@ const fs = require('fs');
  * 檢查手搖飲料菜單
  * @param { object } interaction interaction
  * @param { String } name 店名
- * @returns { String } 檢查結果
+ * @returns { * } 檢查結果
  */
 const checkDrinkMenu = async (interaction, name) => {
     try {
         if (name.length >= 2) {
-            let menuData = fs.readFileSync('./src/base/document/drink-menu.json', 'utf8');
+            let menuData = fs.readFileSync('./src/base/document/drink-menu.json', 'utf-8');
             menuData = JSON.parse(menuData);
         
             for (let i = 0; i < menuData.menu.length; ++ i) {
