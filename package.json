@@ -8,9 +8,10 @@
   },
   "keywords": [],
   "author": "oF",
+  "repository": "github:sky9154/drink-menu-bot",
   "license": "MIT",
-  "engines":{
-    "node":"18.4.0"
+  "engines": {
+    "node": "18.4.0"
   },
   "dependencies": {
     "@discordjs/builders": "^0.14.0",
