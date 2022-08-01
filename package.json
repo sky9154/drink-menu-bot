@@ -1,7 +1,7 @@
 {
   "name": "drink-menu-bot",
   "version": "1.0.0",
-  "description": "discord 飲料店菜單搜尋機器人",
+  "description": "Discord 手搖飲料菜單搜尋機器人",
   "main": "./src/bot.js",
   "scripts": {
     "start": "node ."
