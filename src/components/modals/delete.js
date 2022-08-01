@@ -7,7 +7,7 @@ module.exports = {
     async execute (interaction) {
         const name = interaction.fields.getTextInputValue('name');
 
-        const checkResult = await checkDrinkMenu(interaction, name);
+        const checkResult = checkDrinkMenu(interaction, name);
 
         if (checkResult === 'true') {
             await deleteDrinkMenu(name);

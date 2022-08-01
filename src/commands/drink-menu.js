@@ -32,7 +32,7 @@ module.exports = {
             switch (option) {
                 case 'search':
                     const name = interaction.options.getString('name');
-                    const checkResult = await checkDrinkMenu(interaction, name);
+                    const checkResult = checkDrinkMenu(interaction, name);
 
                     if (checkResult === 'true') {
                         await searchDrinkMenu(interaction, name);

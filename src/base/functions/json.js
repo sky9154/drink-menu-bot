@@ -5,7 +5,7 @@ const fs = require('fs');
  * 檢查手搖飲料菜單
  * @param { object } interaction interaction
  * @param { String } name 店名
- * @returns 檢查結果
+ * @returns { String } 檢查結果
  */
 const checkDrinkMenu = async (interaction, name) => {
     try {

@@ -13,7 +13,7 @@ module.exports = {
             const user = interaction.user.id;
             const date = dayjs().format('YYYY/MM/DD HH:mm:ss Z[Z]');
 
-            const checkResult = await checkDrinkMenu(interaction, name);
+            const checkResult = checkDrinkMenu(interaction, name);
 
             if (checkResult === 'true') {
                 await interaction.reply({
