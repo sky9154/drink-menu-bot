@@ -7,7 +7,7 @@
     "start": "node ."
   },
   "keywords": [],
-  "author": "",
+  "author": "oF",
   "license": "MIT",
   "engines":{
     "node":"18.4.0"
