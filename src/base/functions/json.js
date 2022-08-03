@@ -99,6 +99,36 @@ const searchDrinkMenu = async (interaction, name) => {
 }
 
 /**
+ * 隨機手搖飲料菜單
+ * @param { object } interaction interaction
+ */
+ const randomDrinkMenu = async (interaction) => {
+    fs.readFile('./src/base/document/drink-menu.json', async (err, jsonMenu) => {
+        if (err) {
+            return console.error(err);
+        } else {
+            let menuData = jsonMenu.toString();
+            menuData = JSON.parse(menuData);
+
+            const rdNum = Math.floor(Math.random() * (menuData.menu.length - 1));
+   
+            const drinkEmbed = new MessageEmbed()
+            .setTitle(`【${menuData.menu[rdNum].name}】菜單`)
+            .setColor('#83abc9')
+            .setImage(menuData.menu[rdNum].menu)
+            .setFooter({ 
+                text: `最後更新時間: ${menuData.menu[rdNum].date}`, 
+                iconURL: 'https://cdn.discordapp.com/attachments/1001972664723832915/1001973391248605214/drink-menu-bot.png' 
+            });
+
+            await interaction.reply({
+                embeds: [drinkEmbed]
+            });
+        }
+    });
+}
+
+/**
  * 新增手搖飲料菜單
  * @param { String } name 店名
  * @param { String } menu 菜單
@@ -205,6 +235,7 @@ module.exports = {
     checkDrinkMenu: checkDrinkMenu,
     searchDrinkMenu: searchDrinkMenu,
     listDrinkMenu: listDrinkMenu,
+    randomDrinkMenu: randomDrinkMenu,
     addDrinkMenu: addDrinkMenu,
     deleteDrinkMenu: deleteDrinkMenu,
     editDrinkMenu: editDrinkMenu

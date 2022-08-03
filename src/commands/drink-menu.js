@@ -1,6 +1,6 @@
 const { MessageActionRow, MessageButton } = require('discord.js');
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const { checkDrinkMenu, searchDrinkMenu, listDrinkMenu } = require('../base/functions/json');
+const { checkDrinkMenu, searchDrinkMenu, listDrinkMenu, randomDrinkMenu } = require('../base/functions/json');
 
 const { ADMINISTRATION } = process.env;
 
@@ -20,7 +20,7 @@ module.exports = {
             .setDescription('手搖飲料菜單總表'))
         .addSubcommand((subcommand) => subcommand
         .setName('random')
-        .setDescription('隨機推薦手搖飲料菜單'))
+        .setDescription('隨機手搖飲料菜單'))
         .addSubcommand((subcommand) => subcommand
             .setName('settings')
             .setDescription('管理手搖飲料菜單')
@@ -51,10 +51,7 @@ module.exports = {
 
                     break;
                 case 'random':
-                    await interaction.reply({
-                        content: '功能尚未完工...',
-                        ephemeral: true
-                    }); 
+                    await randomDrinkMenu(interaction);
                 
                     break;
                 default:
