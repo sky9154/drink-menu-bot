@@ -50,22 +50,22 @@ npm run start
 ```
 
 ## 如何使用
-### /drink menu search `name`
+### search `name`
 
 | 參數 | 類型 | 說明 |
 | - | - | - |
 | [name] | string | tea shop name |
 
-回覆搜尋到的手搖飲料菜單
+> 回覆搜尋到的手搖飲料菜單
 
-### /drink menu list
-回覆目前已知的手搖飲料菜單
+### list
+> 回覆目前已知的手搖飲料菜單
 
-### /drink menu random
-回覆隨機一個手搖飲料菜單
+### random
+> 回覆隨機一個手搖飲料菜單
 
-### /drink menu settings
-回覆一個機器人設定集
+### settings
+> 回覆一個機器人設定集
 
 ## 數據說明
 ### 架構
