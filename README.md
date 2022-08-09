@@ -1,6 +1,5 @@
 # Discord Bot - 喝個搖搖
 ![Platform Version Support](https://img.shields.io/node/v/discord.js)
-![Last Commit](https://img.shields.io/github/last-commit/sky9154/drink-menu-bot)
 ![GitHub license](https://img.shields.io/badge/license-MIT_License-blue.svg)
 
 [<img src="https://cdn.discordapp.com/attachments/1001972664723832915/1001973391248605214/drink-menu-bot.png" width="500"/>](https://cdn.discordapp.com/attachments/1001972664723832915/1001973391248605214/drink-menu-bot.png)
