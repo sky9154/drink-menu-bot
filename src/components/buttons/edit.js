@@ -8,7 +8,7 @@ module.exports = {
         const nameInput = new MessageActionRow()
         .addComponents(new TextInputComponent()
             .setCustomId('name')
-            .setLabel('手搖飲料店店名')
+            .setLabel('手搖飲料店名')
             .setStyle('SHORT')
             .setRequired(true));
 

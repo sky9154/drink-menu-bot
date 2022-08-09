@@ -13,7 +13,7 @@ module.exports = {
             .setDescription('查詢手搖飲料菜單')
             .addStringOption((option) => option
                 .setName('name')
-                .setDescription('手搖飲料店店名')
+                .setDescription('手搖飲料店名')
                 .setRequired(true)))
         .addSubcommand((subcommand) => subcommand
             .setName('list')
